@@ -43,7 +43,7 @@ const faqs = [
     {
       question: 'What is the cost of QXcloud services?',
       answer:
-        'he cost of QXcloud services can vary depending on the scope of the project, the level of customization required, and other factors. They offer competitive pricing and work with their clients to develop a customized pricing plan that fits their specific needs and budget.',
+        'The cost of QXcloud services can vary depending on the scope of the project, the level of customization required, and other factors. They offer competitive pricing and work with their clients to develop a customized pricing plan that fits their specific needs and budget.',
     },
     {
       question: 'Can QXcloud provide ongoing support and maintenance for Revenue Cloud?',
