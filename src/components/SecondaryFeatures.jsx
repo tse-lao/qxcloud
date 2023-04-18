@@ -10,10 +10,10 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Managed Resources',
+    summary: 'Get a trained CPQ/Billing specialist to manage or assist you in your CPQ Implementation.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'Managed resources provide businesses with a cost-effective and efficient way to leverage the expertise and resources of a trusted provider, allowing them to focus on their core operations and goals.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -44,11 +44,11 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'CPQ Health Check',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'CPQ Implementation are difficult, let us help you verify that the CPQ package was setup right',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      'Regular CPQ health checks can help businesses identify and address potential issues before they become major problems, ensuring that their sales operations continue to run smoothly and efficiently.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -72,11 +72,11 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Revenue Cloud Implementation',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'We know our way around CPQ and have implemented some of the largest CPQ projects in the Benelux and Nordics.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Effective implementation of Revenue Cloud can help businesses optimize their sales processes, increase revenue potential, and gain a competitive edge in the market.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -216,11 +216,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+           Get the most out of Revenue Cloud.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            Optimise your Quote-to-Cash journey with managed resources that get the best out of Salesforce CPQ, Billing and Subscription Management.
           </p>
         </div>
         <FeaturesMobile />
