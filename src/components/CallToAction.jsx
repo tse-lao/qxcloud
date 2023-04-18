@@ -24,11 +24,12 @@ export function CallToAction() {
             Contact Us
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Buy our software so you can
-            feel like you’re doing something productive.
+           We're here to help! Whether you have a question about the products, services, or just want to say hello, we'd love to hear from you. 
+           Contact us using the form below or reach out to us directly via email or phone. 
+           Our team is committed to providing you with the best possible support and will get back to you as soon as possible.
           </p>
           <Button href="/register" color="white" className="mt-10">
-            Get 6 months free
+            Contact 
           </Button>
         </div>
       </Container>
