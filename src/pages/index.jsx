@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>QX - QPC For Cloud</title>
+        <title>QX - Quote for Experience</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="We are a Salesforce Consulting agency. We focus on Salesforce CPQ, Billing and full B2B Customer Journeys."
         />
       </Head>
       <Header />
