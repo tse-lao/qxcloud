@@ -6,53 +6,53 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'What is Revenue Cloud?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'Revenue Cloud is a cloud-based software solution that streamlines the sales processes of a company. It automates pricing, quoting, and contracting, and helps sales reps to generate accurate quotes and proposals quickly and efficiently.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'How can QXcloud help my company with Revenue Cloud?',
+      answer: 'QXcloud can help your company with Revenue Cloud by providing consulting services to assess your current sales processes and develop a customized Revenue Cloud solution that fits your specific needs. They can also provide implementation, training, and support services to ensure the successful adoption and usage of Revenue Cloud.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'What are the benefits of working with QXcloud?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'The benefits of working with QXcloud include their expertise and experience in Revenue Cloud, their ability to provide customized solutions, their focus on customer success, and their commitment to delivering high-quality services.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'What industries does QXcloud specialize in?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'QXcloud specializes in a range of industries including manufacturing, technology, telecommunications, and healthcare, as well as other industries that have complex products or sales processes.',
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'How long does it take to implement Revenue Cloud with QXcloud?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'The implementation time of Revenue Cloud with QXcloud can vary depending on the complexity of your sales processes and the level of customization required. On average, it can take between 2-6 months to implement Revenue Cloud.',
     },
     {
       question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+        'What training and support are available from QXcloud?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'QXcloud offers a range of training and support options including online training courses, in-person training sessions, and ongoing support to ensure the successful adoption and usage of Revenue Cloud.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'What is the cost of QXcloud services?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'he cost of QXcloud services can vary depending on the scope of the project, the level of customization required, and other factors. They offer competitive pricing and work with their clients to develop a customized pricing plan that fits their specific needs and budget.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'Can QXcloud provide ongoing support and maintenance for Revenue Cloud?',
+      answer: 'Yes, QXcloud can provide ongoing support and maintenance for Revenue Cloud to ensure that it continues to meet your companys evolving needs and requirements.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'How can I get started working with QXcloud?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'You can get started working with QXcloud by contacting them to schedule a consultation to discuss your company Revenue Cloud needs and how they can help you achieve your goals.',
     },
   ],
 ]
