@@ -127,7 +127,7 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
         <p>
-        We focus on optimizing the entire quote-to-cash process. QX Cloud boasts extensive experience in guiding and implementing B2B customer journeys, with a strong emphasis on our clients' customers.         
+        We focus on optimizing the entire quote-to-cash process. QX Cloud boasts extensive experience in guiding and implementing B2B customer journeys, with a strong emphasis on our clients customers.         
         </p>
         <p>
         We provide guidance and recommendations to our clients on how to most efficiently approach their customers or how to enable sales teams to quote to customers more rapidly and accurately.
