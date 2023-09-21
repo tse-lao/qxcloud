@@ -82,7 +82,7 @@ function Header({
             aria-controls={panelId}
             className={clsx(
               'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10'
+              invert ? 'hover:bg-white/10' : 'hover:bg-sky-950/10'
             )}
             aria-label="Toggle navigation"
           >
@@ -90,8 +90,8 @@ function Header({
               className={clsx(
                 'h-6 w-6',
                 invert
-                  ? 'fill-white group-hover:fill-neutral-200'
-                  : 'fill-neutral-950 group-hover:fill-neutral-700'
+                  ? 'fill-white group-hover:fill-sky-200'
+                  : 'fill-sky-950 group-hover:fill-sky-700'
               )}
             />
           </button>
@@ -103,7 +103,7 @@ function Header({
 
 function NavigationRow({ children }) {
   return (
-    <div className="even:mt-px sm:bg-neutral-950">
+    <div className="even:mt-px sm:bg-sky-950">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -115,10 +115,10 @@ function NavigationItem({ href, children }) {
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+      className="group relative isolate -mx-6 bg-sky-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-sky-800 sm:even:pl-16"
     >
       {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen bg-sky-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
     </Link>
   )
 }
@@ -186,12 +186,12 @@ function RootLayoutInner({ children }) {
           layout
           id={panelId}
           style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className="relative z-50 overflow-hidden bg-neutral-950 pt-2"
+          className="relative z-50 overflow-hidden bg-sky-950 pt-2"
           aria-hidden={expanded ? undefined : 'true'}
           inert={expanded ? undefined : ''}
         >
-          <motion.div layout className="bg-neutral-800">
-            <div ref={navRef} className="bg-neutral-950 pb-16 pt-14">
+          <motion.div layout className="bg-sky-800">
+            <div ref={navRef} className="bg-sky-950 pb-16 pt-14">
               <Header
                 invert
                 panelId={panelId}
@@ -207,7 +207,7 @@ function RootLayoutInner({ children }) {
               />
             </div>
             <Navigation />
-            <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
+            <div className="relative bg-sky-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-sky-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
@@ -242,7 +242,7 @@ function RootLayoutInner({ children }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-sky-50 stroke-sky-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
             yOffset={-96}
             interactive
           />

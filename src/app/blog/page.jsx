@@ -13,7 +13,7 @@ import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 export const metadata = {
   title: 'Blog',
   description:
-    'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
+    'Stay ahead with the latest news, benefit from expert consultations, and learn from success stories to steer your business towards success. Join us in the pursuit of knowledge in the dynamic landscape of CPQ technology. ',
 }
 
 export default async function Blog() {
@@ -23,8 +23,9 @@ export default async function Blog() {
     <>
       <PageIntro eyebrow="Blog" title="The latest articles and news">
         <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
+        Stay ahead with the latest news, benefit from expert consultations, 
+        and learn from success stories to steer your business towards success. 
+        Join us in the pursuit of knowledge in the dynamic landscape of CPQ technology.
         </p>
       </PageIntro>
 

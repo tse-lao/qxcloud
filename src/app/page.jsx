@@ -7,14 +7,12 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { Testimonial } from '@/components/Testimonial'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
 import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
@@ -33,7 +31,7 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-sky-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -62,7 +60,7 @@ function Clients() {
 
 function CaseStudies({ caseStudies }) {
   return (
-    <>
+    <main>
       <SectionIntro
         title="Harnessing technology for a brighter future"
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -109,21 +107,21 @@ function CaseStudies({ caseStudies }) {
           ))}
         </FadeInStagger>
       </Container>
-    </>
+    </main>
   )
 }
 
 function Services() {
   return (
-    <>
+    <main>
       <SectionIntro
         eyebrow="Services"
         title="We help you identify, explore and respond to new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-            Optimise your Quote-to-Cash journey with managed resources that 
-            get the best out of Salesforce CPQ, Billing and Subscription Management.
+          Optimise your Quote-to-Cash journey with managed resources that get
+          the best out of Salesforce CPQ, Billing and Subscription Management.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -138,52 +136,57 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+            <ListItem title="Consulting">
+              Effective implementation of Revenue Cloud can help businesses
+              optimize their sales processes, increase revenue potential, and
+              gain a competitive edge in the market.
+            </ListItem>
+            <ListItem title="Assets">
+              In addition to Salesforce CPQ implementations, we will also
+              leverage the nearshore team for the development of new assets for
+              QX Cloud
+            </ListItem>
             <ListItem title="Managed Resources">
-            Managed resources provide businesses with a cost-effective and efficient way to 
-            leverage the expertise and resources of a trusted provider, 
-            allowing them to focus on their core operations and goals..
-            </ListItem>
-            <ListItem title="CPQ Health Check">
-              Regular CPQ health checks can help businesses identify and address potential issues before they become major problems, 
-              ensuring that their sales operations continue to run smoothly and efficiently.
-            </ListItem>
-            <ListItem title="Revenue Cloud">
-              Effective implementation of Revenue Cloud can help businesses optimize their sales processes, increase revenue potential, and gain a competitive edge in the market.
+              Managed resources provide businesses with a cost-effective and
+              efficient way to leverage the expertise and resources of a trusted
+              provider, allowing them to focus on their core operations and
+              goals..
             </ListItem>
           </List>
         </div>
       </Container>
-    </>
+    </main>
   )
 }
 
 export const metadata = {
-  description:
-    'We are a strategic cloud based CPQ salesforce solution.',
+  description: 'We are a strategic cloud based CPQ salesforce solution.',
 }
 
 export default async function Home() {
   let caseStudies = (await loadMDXMetadata('work')).slice(0, 3)
 
   return (
-    <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
+    <main>
+      <Container className="mt-24 sm:mt-32 md:mt-56 mb-24">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
             Transforming Revenue Management with QX
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a Salesforce Consulting agency. We focus on Salesforce CPQ, Billing and full B2B Customer Journeys.
+            We are a Salesforce Consulting agency. We focus on Salesforce CPQ,
+            Billing and full B2B Customer Journeys.
           </p>
         </FadeIn>
       </Container>
 
-      <Clients />
 
 
 
+
+      <Services />
 
       <ContactSection />
-    </>
+    </main>
   )
 }

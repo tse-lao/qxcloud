@@ -9,45 +9,33 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
-import imageAngelaFisher from '@/images/team/angela-fisher.jpeg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpeg'
-import imageBlakeReid from '@/images/team/blake-reid.jpeg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpeg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpeg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpeg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpeg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpeg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpeg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpeg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpeg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpeg'
+import imageDaanSchuite from '@/images/team/daanschuite.jpeg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 rounded-4xl bg-sky-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="Our mission"
+        title="Drive growth, enhance efficiency, and elevate customer experiences."
         invert
       >
         <p>
-          We are a group of like-minded people who share the same core values.
+        by delivering innovative solutions with our core centric values
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Reliable" invert>
+          we believe that by being consistently honest, trustworthy, and transparent, we offer you not just a service, but a partnership you can count on.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Team-driven customer success" invert>
+            We believe that by investing in our employees and putting them first, 
+            we are better equipped to serve you, our valued customer, with excellence, dedication, and consistency.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Customer Centric" invert>
+          It is not just about reacting; it is about anticipating, innovating, and sometimes making challenging decisions, all with the goal of delivering the best possible experience and outcomes for you.
           </GridListItem>
         </GridList>
       </Container>
@@ -57,72 +45,17 @@ function Culture() {
 
 const team = [
   {
-    title: 'Leadership',
-    people: [
-      {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
-      },
-    ],
-  },
-  {
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        name: 'Daan',
+        role: 'Co-Founder / CEO',
+        image: { src: imageDaanSchuite },
       },
       {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
-      },
-      {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
-      },
-      {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
+        name: 'Joel',
+        role: 'Co-Founder / CTO',
+        image: { src: imageLeslieAlexander },
       },
     ],
   },
@@ -137,7 +70,7 @@ function Team() {
             <Border as={FadeIn} />
             <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
               <FadeIn>
-                <h2 className="font-display text-2xl font-semibold text-neutral-950">
+                <h2 className="font-display text-2xl font-semibold text-sky-950">
                   {group.title}
                 </h2>
               </FadeIn>
@@ -149,7 +82,7 @@ function Team() {
                   {group.people.map((person) => (
                     <li key={person.name}>
                       <FadeIn>
-                        <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                        <div className="group relative overflow-hidden rounded-3xl bg-sky-100">
                           <Image
                             alt=""
                             {...person.image}
@@ -188,42 +121,34 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="We are" title="QX Cloud">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          A young and dynamic company that specializes in full B2B customer journeys.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
-          </p>
-          <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+        <p>
+        We focus on optimizing the entire quote-to-cash process. QX Cloud boasts extensive experience in guiding and implementing B2B customer journeys, with a strong emphasis on our clients' customers.         
+        </p>
+        <p>
+        We provide guidance and recommendations to our clients on how to most efficiently approach their customers or how to enable sales teams to quote to customers more rapidly and accurately.
+          Drawing upon our many years of experience in implementing CPQ (Configure, Price, Quote) solutions, we are well-equipped to offer sound advice to our clients in making the right choices.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="10+" label="Years of experience" />
+          <StatListItem value=">25" label="Delivered projects" />
         </StatList>
       </Container>
 
       <Culture />
-
       <Team />
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        intro="Stay ahead with the latest news, benefit from expert consultations, and learn from success stories to steer your business towards success."
         pages={blogArticles}
       />
 
